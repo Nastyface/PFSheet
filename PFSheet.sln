@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFSheet", "PFSheet\PFSheet.csproj", "{BD59CB36-313B-47F9-9935-5295657FFD42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PFSheet.Tests", "PFSheet.Tests\PFSheet.Tests.csproj", "{26465463-B972-4CE8-8558-3247EE3E76FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD59CB36-313B-47F9-9935-5295657FFD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD59CB36-313B-47F9-9935-5295657FFD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD59CB36-313B-47F9-9935-5295657FFD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD59CB36-313B-47F9-9935-5295657FFD42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26465463-B972-4CE8-8558-3247EE3E76FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26465463-B972-4CE8-8558-3247EE3E76FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26465463-B972-4CE8-8558-3247EE3E76FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26465463-B972-4CE8-8558-3247EE3E76FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
