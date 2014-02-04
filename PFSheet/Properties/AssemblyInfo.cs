@@ -1,4 +1,6 @@
-﻿using System.Reflection;
+﻿using PFSheet.PostsharpAspects;
+using PostSharp.Extensibility;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -33,3 +35,6 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: LogMethodInOut(AttributeTargetTypes = "PFSheet.Controllers.*",
+    AttributeTargetTypeAttributes = MulticastAttributes.Public,
+    AttributeTargetMemberAttributes = MulticastAttributes.Public)]

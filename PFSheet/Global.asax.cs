@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Practices.Unity;
+using PFSheet.CommonClasses;
+using PFSheet.Utility.Logger;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,6 +26,14 @@ namespace PFSheet
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
+            BuildObjectGraph(Container.Instance);
+
+        }
+
+        private void BuildObjectGraph(Microsoft.Practices.Unity.IUnityContainer unityContainer)
+        {
+            unityContainer.RegisterType<IPFLogger, PFLogger>();
         }
     }
 }

@@ -65,7 +65,7 @@ namespace PFSheet.Controllers
                 return Request.CreateResponse(HttpStatusCode.Unauthorized);
             }
 
-            db.Entry(todoList).State = EntityState.Modified;
+            //db.Entry(todoList).State = EntityState.Modified;
 
             try
             {
