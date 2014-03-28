@@ -13,7 +13,7 @@ using PFSheet.Models;
 namespace PFSheet.Controllers
 {
     [Authorize]
-    [InitializeSimpleMembership]
+    //[InitializeSimpleMembership]
     public class AccountController : Controller
     {
         //

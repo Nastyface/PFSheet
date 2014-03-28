@@ -1,11 +1,12 @@
-﻿using PFSheet.CommonClasses;
+﻿using Microsoft.Practices.Unity;
+using PFSheet.BL.DALProvider;
+using PFSheet.BL.Models;
+using PFSheet.CommonClasses;
 using PFSheet.Utility.Logger;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using Microsoft.Practices.Unity;
+using System.Linq;
+using PFSheet.Models.Models;
 
 namespace PFSheet.Controllers
 {
@@ -15,8 +16,31 @@ namespace PFSheet.Controllers
 
         public ActionResult Index(string returnUrl)
         {
-            Log.Debug("TESTING !!!@@@");
+            //DefaultContext c = new DefaultContext("DefaultConnection");
+            //Race r = new Race();
+            //r.RaceID = 1;
+            //r.Name = "Test";
+            //c.Races.Add(r);
+            //c.SaveChanges();
+            //List<Race> races = c.Races.ToList();
+
+            //Race r = new Race(IDefaultOperations);
+
+            IDALProvider provider = Container.Instance.Resolve<IDALProvider>();
+            IList<AbilityScore> d = provider.StaticDataProvider.GetAllAbilityScores();
+            //List<Race> races = provider.RaceProvider.GetAllRaces().ToList();
+
+
+            //IViewRace race = Container.Instance.Resolve<IViewRace>();
+            //race.GetAllRaces();
+            
+
+            //List<Race> ra = Race.LoadAllRaces(Container.Instance.Resolve<IDefaultOperations>());
+
+            //List<Race> ra = r.LoadAllRaces();
+
             ViewBag.ReturnUrl = returnUrl;
+
             return View();
         }
     }

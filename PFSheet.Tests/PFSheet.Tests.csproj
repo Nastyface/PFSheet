@@ -55,6 +55,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NLog.2.1.0\lib\net45\NLog.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="PostSharp">
       <HintPath>..\packages\PostSharp.3.1.28\lib\net20\PostSharp.dll</HintPath>
     </Reference>
@@ -126,9 +129,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Misc\IOWorker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="LoggerTest.cs" />
-    <Compile Include="RavenDBTests\DBAccessTest.cs" />
+    <Compile Include="Tests\LoggerTest.cs" />
+    <Compile Include="Tests\DAL.RavenDBTests\DBAccessTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

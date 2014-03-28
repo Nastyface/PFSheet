@@ -1,15 +1,13 @@
-﻿using PFSheet.CommonClasses;
-using PFSheet.Utility.Logger;
+﻿using PFSheet.Utility.Logger;
 using PostSharp.Aspects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Microsoft.Practices.Unity;
 using System.Reflection;
 using PostSharp.Patterns.Model;
 
-namespace PFSheet.PostsharpAspects
+namespace PFSheet.Utility.PostsharpAspects
 {
     [Serializable]
     [LogMethodInOutAttribute(AttributeExclude = true)]

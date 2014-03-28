@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PFSheet.DAL.RavenDB;
 using System.IO;
 
-namespace PFSheet.Tests.RavenDBTests
+namespace PFSheet.Tests.Tests.RavenDBTests
 {
     [TestClass]
     public class DBAccessTest

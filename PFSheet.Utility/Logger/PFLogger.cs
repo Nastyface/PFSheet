@@ -1,4 +1,5 @@
 ﻿using Common.Logging;
+using PFSheet.Utility.PostsharpAspects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace PFSheet.Utility.Logger
 {
+    [LogMethodInOutAttribute(AttributeExclude = true)]
     public class PFLogger : IPFLogger
     {
         private readonly ILog Log = LogManager.GetLogger("PFLogger");

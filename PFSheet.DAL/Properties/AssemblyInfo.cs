@@ -1,18 +1,16 @@
-﻿using PFSheet.Utility.PostsharpAspects;
-using PostSharp.Extensibility;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PFSheet.Utility")]
+[assembly: AssemblyTitle("PFSheet.DAL")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PFSheet.Utility")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyProduct("PFSheet.DAL")]
+[assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -22,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("31c8bde8-8c6c-4441-8f80-02dffdb6a367")]
+[assembly: Guid("24d555c4-1820-43ff-b674-16e0d2e88eba")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -36,10 +34,3 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-
-[assembly: LogMethodInOut(AttributeExclude = true, AttributePriority = 0,
-            AttributeTargetMemberAttributes = MulticastAttributes.CompilerGenerated)]
-
-[assembly: LogMethodInOut(AttributeTargetTypes = "PFSheet*",
-    AttributeTargetTypeAttributes = MulticastAttributes.UserGenerated,
-    AttributeTargetMemberAttributes = MulticastAttributes.UserGenerated)]
